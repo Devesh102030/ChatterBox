@@ -105,36 +105,3 @@ export const Chat = ()=>{
 
 
 
-{/* <div>
-    <input type="text" placeholder="Enter your username" onChange={(e)=>setusername(e.target.value)}
-        className="w-full bg-[#1b1e32] border border-[#363c63] rounded-lg h-14 px-4 text-white placeholder-[#959bc6]"
-    />
-    <button onClick={connect} className="h-10 px-4 bg-[#6173e9] text-white rounded-lg">Set Username</button>
-</div>
-<div>
-    <h2>Chat Room</h2>
-    <p>Welcome to the chat room! Start sending messages below</p>
-    <div>
-        {history &&
-            history.map((msg)=>{
-                return(
-                    <div key={msg._id}>
-                        <p>{msg.username}</p>
-                        <p>{msg.message}</p>
-                    </div>
-                )
-            })
-        }
-        <input type="text" placeholder="Type your message..."
-            value={message}
-            onChange={(e)=>setmessage(e.target.value)}
-            onKeyDown={(e)=>{
-                if(e.key === "Enter" && message){
-                    handleMessage();
-                }
-            }} 
-        />
-        <button disabled={message.length === 0} onClick={handleMessage}>Send</button>
-    </div>
-</div> */}
-

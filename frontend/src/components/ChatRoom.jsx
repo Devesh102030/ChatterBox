@@ -17,14 +17,12 @@ const ChatRoom = ({
     !history ? ( <div/>) : (
         <div className="flex justify-center flex-col h-full w-full text-[#0f151a] dark:text-white">
         <div className="w-full mx-auto px-4 h-full flex flex-col">
-        {/* Chat Header */}
             
         <h2 className="text-xl font-bold mb-2">Chatter Board</h2>
         <p className="text-base mb-4">
             You’ve entered ChatterBox. Got something to say? Say it loud!
         </p>
 
-        {/* Chat History */}
         
         <div className="flex-1 overflow-y-auto scoll-smooth mb-4 pr-2 border border-gray-200 rounded-lg">
             <div className="flex flex-col gap-4 mb-6">
