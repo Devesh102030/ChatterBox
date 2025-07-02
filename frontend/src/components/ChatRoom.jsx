@@ -57,6 +57,15 @@ const ChatRoom = ({
                         >
                             {msg.message}
                         </p>
+                        <p className='text-[10px] flex justify-end text-gray-800 dark:text-gray-300'>
+                            {new Date(msg.timestamp).toLocaleString("en-IN",{
+                                timezone: "Asia/Kolkata",
+                                hour: "2-digit",
+                                minute: "2-digit",
+                                hour12: true
+                            }).toUpperCase()}
+                        </p>
+                        
                     </div>
                     {msg.username === username && (
                         <div className="w-10 h-10 bg-gray-400 dark:bg-gray-600 text-gray-800 dark:text-white rounded-full shrink-0 flex justify-center items-center font-semibold" >
