@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="https://your-frontend-url.vercel.app">
+  <a href="https://chatter-box-puce-five.vercel.app/">
     <img src="./frontend/public/favicon.png" alt="ChatterBox Icon" width="80" height="80" style="margin-bottom: 10px;" />
   </a>
 </p>
