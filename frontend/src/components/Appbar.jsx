@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 
 const Appbar = ()=>{
+
+    // State to track dark mode, initialized from localStorage
     const [isDark, setIsDark] = useState(() => {
         return localStorage.getItem('theme') === 'dark';
     });
 
+    // Apply/remove dark theme on root element whenever isDark changes
     useEffect(() => {
         const root = document.documentElement;
         if (isDark) {
@@ -31,12 +34,12 @@ const Appbar = ()=>{
         </div>
 
         <div className="flex items-center gap-4">
+                {/* Theme toggle button */}
                 <div className="flex gap-2">
                     <button className="h-10 px-2.5 bg-gray-100 dark:bg-[#2a2b40] rounded-lg" onClick={() => setIsDark(prev => !prev)}>
                         {isDark ? (<Sun/>) : (<Moon className='text-black'/>)}
                     </button>
                 </div>
-                <div className="w-10 h-10 bg-cover rounded-full" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/...')` }}></div>
             </div>
         </header>
     )

@@ -2,10 +2,13 @@ import { useState } from "react";
 
 const UserInput = ({ username, setUsername, connect }) => {
 
+  // state to control the warning message  
   const [warning, setwarning] = useState(true);
     
   return (
     <div className="flex flex-col items-center"> 
+
+        {/* Input and button container */}
         <div className="flex justify-center items-end gap-1 px-4 py-3 mt-4 max-w-xl w-full">
             <input
                 type="text"
@@ -33,6 +36,7 @@ const UserInput = ({ username, setUsername, connect }) => {
                 Set Username
             </button>
         </div>
+        {/* Warning message shown when user hasn't entered a username */}
         {warning && <div className="text-gray-800 dark:text-gray-200 mt-2"> Please enter the username to get started </div>}
     </div>
   );
